@@ -3,7 +3,7 @@
 > **Real-time telemetry dashboard for the HYDRO-1 flight computer.**
 > WebSocket telemetry · 3D attitude · Live charts · EMI noise analysis · CSV export · Audio alerts · Demo mode
 
-[![Status](https://img.shields.io/badge/status-In%20Development-yellow)](https://github.com/DonJechu/HYDRO-1-Ground-Station)
+[![Status](https://img.shields.io/badge/status-First%20Flight%20Complete-brightgreen)](https://github.com/DonJechu/HYDRO-1-Ground-Station)
 [![Stack](https://img.shields.io/badge/stack-React%20%2B%20Vite-blue)](https://vitejs.dev/)
 [![Flight Computer](https://img.shields.io/badge/flight%20computer-HYDRO--1-green)](https://github.com/DonJechu/HydroRocket-Telemetry-System)
 
@@ -44,7 +44,7 @@ The ground station was designed around two goals:
 ## System Connection
 
 ```
-ESP32 (AP: GANNET) ──► WebSocket ws://192.168.4.1:81 ──► Ground Station
+ESP32 (AP: Atl_FC) ──► WebSocket ws://192.168.4.1:81 ──► Ground Station
                               10 Hz JSON packets
 ```
 
@@ -211,7 +211,7 @@ Open `http://localhost:5173` in your browser.
 ### Connect to flight computer
 
 1. Power on HYDRO-1 — wait for `=== READY FOR FLIGHT ===` in serial monitor
-2. Connect laptop to Wi-Fi: **SSID: GANNET** / **Password: 1234**
+2. Connect laptop to Wi-Fi: **SSID: Atl_FC** / **Password: 12345678**
 3. Open ground station at `localhost:5173`
 4. Default URL `ws://192.168.4.1:81` is pre-filled — click **CONECTAR**
 
@@ -291,4 +291,4 @@ Mechatronics Engineering Student — IEST Anáhuac, Tamaulipas
 Member: IEEE Student Branch · Vértice Excellence Program
 [github.com/DonJechu](https://github.com/DonJechu) · jesus.perea@iest.edu.mx
 
-*Part of ongoing research on EMI mitigation in aerospace avionics using the Poynting Vector framework.*
+*Part of ongoing research on EMI mitigation in compact low-cost avionics. Paper in preparation for IEEE Latin America Transactions.*
